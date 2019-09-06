@@ -6,15 +6,18 @@
 
 ## Description
 
-This application is an independent coding project from a Ruby coding class at Epicodus. This application is intended to demonstrate an understanding of Ruby and the Rails framework. This an API for an animal shelter, which returns information regarding animals in their database.
+This application is an two-week independent project from a React coding class at Epicodus. This application is intended to demonstrate an understanding of React, a JavaScript library. This is beerlist webpage for a mock taproom, called Tap the Sky. 
 
 ## Setup/Installation Requirements
 
-* _These instructions are aimed for MacOS, and may require slight adjustments if using another OS_
-* _Clone this repository_
-* _Open terminal and type **git clone [git link]**_
-* _Navigate to project directory using **cd** in terminal_
-* _Open project in text editor (atom)_
+* These instructions are aimed for MacOS, and may require slight adjustments if using another OS
+* Clone this repository
+* Open terminal and type $ `git clone [git link]`
+* Navigate to project directory by entering $`cd [project_name]` in terminal
+* Open project in text editor (atom)
+* In terminal window, type $ `webpack`
+* Then enter $ `npm run start`
+* Open your favorite browser and navigate to `localhost:8080`
 
 ## Route Layout
 
