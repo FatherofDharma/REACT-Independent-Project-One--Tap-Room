@@ -1,5 +1,5 @@
-import React from "react";
-import Tap from "./Tap";
+import React from 'react';
+import Tap from './Tap';
 
 function TapList(){
   return (
@@ -9,7 +9,7 @@ function TapList(){
       Price={5.00}
       AbV={4.3}
       Flavors="A hint of citrus, with floral notes, finishing with a subtle note of hops."
-      />
+    />
   );
 }
 
