@@ -16,12 +16,9 @@ This application is an independent coding project from a Ruby coding class at Ep
 * _Navigate to project directory using **cd** in terminal_
 * _Open project in text editor (atom)_
 
-## Specs
+## Route Layout
 
-| Behavior | Input | Output |
-| ------------- |:-------------:| -----:|
-||||
-||||
+![alt text](TapRoom-React.png)
 
 ## Known Bugs
 
