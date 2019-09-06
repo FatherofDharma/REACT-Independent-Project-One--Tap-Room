@@ -1,13 +1,11 @@
 import React from "react";
 
-function Tap(){
+function Tap(props){
   return (
     <div>
-      <h3>Name: Rain of Hops</h3>
-      <h3>Brewer: Clouty Skies</h3>
-      <h3>Price: $5.00</h3>
-      <h3>ABV: 4.3%</h3>
-      <p><em>Flavors: </em></p>
+      <h3>{props.Name} by {props.Brewer}</h3>
+      <h5>{props.Price} per Pint - {props.ABV}</h5>
+      <p><em>{props.Flavors}</em></p>
       <hr/>
     </div>
   );
