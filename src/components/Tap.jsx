@@ -9,8 +9,8 @@ function Tap(props){
           background-color: Orange;
         }
       `}</style>
-      <h3>{props.name} by {props.brewer}</h3>
-      <h5>${props.price} per Pint - {props.abv}%</h5>
+      <h3>|{props.name} | By: {props.brewer}|</h3>
+      <h5>${props.price} per Pint - {props.abv}% ABV</h5>
       <p><em>{props.flavors}</em></p>
       <hr/>
     </div>

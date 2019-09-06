@@ -11,7 +11,7 @@ var masterTapList = [
   },
   {
     name: 'Orange You Glad You Have Taste',
-    bewer: 'Triple Pour',
+    brewer: 'Triple Pour',
     price: 6.00,
     abv: 6.50,
     flavors: 'Like an Orangecicle cranked to eleven'
