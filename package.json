@@ -4,7 +4,8 @@
   "description": "The first independent project for the React course for the coding school, Epicodus, written on September 6th, 2019.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
