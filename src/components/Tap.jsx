@@ -6,7 +6,7 @@ function Tap(props){
     <div>
       <style jsx>{`
         div {
-          background-color: yellow;
+          background-color: Orange;
         }
       `}</style>
       <h3>{props.name} by {props.brewer}</h3>
