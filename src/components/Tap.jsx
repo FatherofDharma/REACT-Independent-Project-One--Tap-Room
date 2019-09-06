@@ -4,20 +4,20 @@ import PropTypes from 'prop-types';
 function Tap(props){
   return (
     <div>
-      <h3>{props.Name} by {props.Brewer}</h3>
-      <h5>${props.Price} per Pint - {props.AbV}%</h5>
-      <p><em>{props.Flavors}</em></p>
+      <h3>{props.name} by {props.brewer}</h3>
+      <h5>${props.price} per Pint - {props.abv}%</h5>
+      <p><em>{props.flavors}</em></p>
       <hr/>
     </div>
   );
 }
 
 Tap.propTypes = {
-  Name: PropTypes.string.required,
-  Brewer: PropTypes.string.required,
-  Price: PropTypes.number.required,
-  AbV: PropTypes.number.required,
-  Flavors: PropTypes.string
+  name: PropTypes.string.required,
+  brewer: PropTypes.string.required,
+  price: PropTypes.number.required,
+  abv: PropTypes.number.required,
+  flavors: PropTypes.string
 };
 
 export default Tap;
