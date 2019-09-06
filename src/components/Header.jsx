@@ -2,7 +2,7 @@ import React from "react";
 
 function Header(){
   return (
-    <h1>Tap the Sky - Nectar of the gods on tap</h1>
+    <h1>Tap the Sky - Current Brews</h1>
   );
 }
 
