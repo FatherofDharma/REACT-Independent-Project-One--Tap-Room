@@ -4,6 +4,11 @@ import PropTypes from 'prop-types';
 function Tap(props){
   return (
     <div>
+      <style jsx>{`
+        div {
+          background-color: yellow;
+        }
+      `}</style>
       <h3>{props.name} by {props.brewer}</h3>
       <h5>${props.price} per Pint - {props.abv}%</h5>
       <p><em>{props.flavors}</em></p>
