@@ -35,7 +35,6 @@ var masterTapList = [
 function TapList(){
   return (
     <div>
-      <hr/>
       {masterTapList.map((tap, index) =>
         <Tap name={tap.name}
           brewer={tap.brewer}

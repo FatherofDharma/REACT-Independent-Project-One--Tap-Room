@@ -12,6 +12,7 @@ function Header(){
         }
       `}</style>
       <Link to="/">Home</Link> | <Link to="/newtap">Add New Beer</Link>
+      <hr/>
     </div>
   );
 }
