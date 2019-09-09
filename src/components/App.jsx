@@ -6,8 +6,13 @@ import NewTapForm from './NewTapForm';
 import Error404 from './Error404';
 
 function App(){
+  var mainStyle = {
+    // will add more styles here after learning a bit more about how the entire document is rendered.
+    // backgroundColor: 'grey'
+  };
+
   return (
-    <div>
+    <div style={mainStyle}>
       <Header/>
       <Switch>
         <Route exact path='/' component={TapList}/>

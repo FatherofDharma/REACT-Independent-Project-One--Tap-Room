@@ -7,13 +7,16 @@ function Tap(props){
       <style jsx>{`
         div {
           background-color: Orange;
-          padding-left: 2px;
+          padding-left: 5px;
+          margin: 1px;
           border: 3px;
           border-style: solid;
           border-color: black;
+          border-radius: 10px;
+
         }
       `}</style>
-      <h3>|{props.name} | By: {props.brewer}|</h3>
+      <h3>{props.name} | By: {props.brewer}</h3>
       <h5>${props.price} per Pint - {props.abv}% ABV</h5>
       <p><em>{props.flavors}</em></p>
     </div>
