@@ -4,11 +4,16 @@ import TapList from './TapList';
 import TapDetail from './TapDetail';
 
 function Employee(props){
+  let optionalSelectedTapContent = null;
+  if (props.selectedTap != null) {
+    optionalSelectedTapContent = <TapDetail />;
+  }
   return (
     <div>
       <h2>Employee Section</h2>
-      <TapDetail />
-      <TapList tapList={props.tapList}
+      {optionalSelectedTapContent}
+      <TapList
+        tapList={props.tapList}
         currentRouterPath={props.currentRouterPath}
         onTapSelection={props.onTapSelection} />
     </div>
@@ -18,7 +23,8 @@ function Employee(props){
 Employee.propTypes = {
   tapList: PropTypes.array,
   currentRouterPath: PropTypes.string.isRequired,
-  onTapSelection: PropTypes.func.isRequired
+  onTapSelection: PropTypes.func.isRequired,
+  selectedTap: PropTypes.object
 };
 
 export default Employee;
