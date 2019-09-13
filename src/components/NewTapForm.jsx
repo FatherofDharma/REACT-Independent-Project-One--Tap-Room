@@ -13,7 +13,7 @@ function NewTapForm(props){
     props.onNewTapCreation({name: _name.value, brewer: _brewer.value, price: _price.value, abv: _abv.value, flavors: _flavors.value});
     _name.value = '';
     _brewer.value = '';
-    _price.value
+    _price.value = '';
     _abv.value = '';
     _flavors.value = '';
   }

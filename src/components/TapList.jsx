@@ -1,10 +1,11 @@
 import React from 'react';
 import Tap from './Tap';
+import PropTypes from 'prop-types';
 
-function TapList(){
+function TapList(props){
   return (
     <div>
-      {masterTapList.map((tap, index) =>
+      {props.tapList.map((tap, index) =>
         <Tap name={tap.name}
           brewer={tap.brewer}
           price={tap.price}
@@ -15,5 +16,9 @@ function TapList(){
     </div>
   );
 }
+
+TapList.propTypes = {
+  tapList: PropTypes.array
+};
 
 export default TapList;

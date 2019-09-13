@@ -22,16 +22,16 @@ class App extends React.Component {
   }
   
   render() {
-  var mainStyle = {
+    var mainStyle = {
     // will add more styles here after learning a bit more about how the entire document is rendered.
     // backgroundColor: 'grey'
-  };
+    };
 
     return (
       <div style={mainStyle}>
         <Header/>
         <Switch>
-          <Route exact path='/' render={() => <TapList tapList={{this.state.masterTapList} />}/>
+          <Route exact path='/' render={() => <TapList tapList={this.state.masterTapList} />}/>
           <Route path='/newtap' render={() => <NewTapForm onNewTapCreation={this.handleAddingNewTapToList} />}/>
           <Route component={Error404}/>
         </Switch>
