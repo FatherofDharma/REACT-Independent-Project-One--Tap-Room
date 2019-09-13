@@ -31,7 +31,7 @@ class App extends React.Component {
       <div style={mainStyle}>
         <Header/>
         <Switch>
-          <Route exact path='/' component={TapList}/>
+          <Route exact path='/' render={() => <TapList tapList={{this.state.masterTapList} />}/>
           <Route path='/newtap' render={() => <NewTapForm onNewTapCreation={this.handleAddingNewTapToList} />}/>
           <Route component={Error404}/>
         </Switch>
