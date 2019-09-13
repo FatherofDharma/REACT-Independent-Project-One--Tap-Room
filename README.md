@@ -17,7 +17,7 @@ This application is an two-week independent project from a React coding class at
 * Open project in text editor (atom)
 * In terminal window, type $ `webpack`
 * Then enter $ `npm run start`
-* Open your favorite browser and navigate to `localhost:8080`
+* Open your favorite browser and navigate to `localhost:8080`, or whatever port your localhost opens to
 
 ## Route Layout
 
@@ -25,7 +25,9 @@ This application is an two-week independent project from a React coding class at
 
 Changes from Previous Image Version:
 
-* 9-13-19: Tap Control and confirmation questions removed due to being unnecessary 
+* 9-13-19: 
+  * Tap Control and confirmation questions removed due to being unnecessary 
+  * New Employee path showing Taplist, Tap, and now TapDetail(when selected)
 
 ## Known Bugs
 
