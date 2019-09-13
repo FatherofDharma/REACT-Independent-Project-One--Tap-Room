@@ -4,6 +4,7 @@ import Header from './Header';
 import { Switch, Route } from 'react-router-dom';
 import NewTapForm from './NewTapForm';
 import Error404 from './Error404';
+import Employee from './Employee';
 
 class App extends React.Component {
   
@@ -33,6 +34,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' render={() => <TapList tapList={this.state.masterTapList} />}/>
           <Route path='/newtap' render={() => <NewTapForm onNewTapCreation={this.handleAddingNewTapToList} />}/>
+          <Route path='/employee' render={() => <Employee tapList={this.state.masterTapList} />} />
           <Route component={Error404}/>
         </Switch>
       </div>
