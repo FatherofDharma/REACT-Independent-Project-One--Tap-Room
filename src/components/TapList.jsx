@@ -14,7 +14,8 @@ function TapList(props){
           flavors={tap.flavors}
           currentRouterPath={props.currentRouterPath}
           key={tapId}
-          tapId={tapId}/>;
+          tapId={tapId}
+          onTapSelection={props.onTapSelection}/>;
       })}
     </div>
   );

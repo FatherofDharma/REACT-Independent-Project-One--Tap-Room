@@ -10,7 +10,6 @@ function Employee(props){
   }
   return (
     <div>
-      <h2>Employee Section</h2>
       {optionalSelectedTapContent}
       <TapList
         tapList={props.tapList}
