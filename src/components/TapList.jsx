@@ -12,6 +12,7 @@ function TapList(props){
           price={tap.price}
           abv={tap.abv}
           flavors={tap.flavors}
+          currentRouterPath={props.currentRouterPath}
           key={tapId}
           tapId={tapId}/>;
       })}

@@ -20,7 +20,6 @@ class App extends React.Component {
   }
   
   handleChangingSelectedTap(tapId){
-    console.log('I have been clicked-changingSelectedTap in app')
     this.setState({selectedTap: tapId});
   }
   

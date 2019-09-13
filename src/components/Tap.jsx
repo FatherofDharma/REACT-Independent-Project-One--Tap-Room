@@ -24,12 +24,14 @@ function Tap(props){
     return (
       <div onClick={() => {props.onTapSelection(props.tapId);}}>
         {tapInformation}
+        <p>Poop</p>
       </div>
     );
   } else {
     return (
       <div>
         {tapInformation}
+        <p>else</p>
       </div>
     );
   }
