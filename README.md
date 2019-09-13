@@ -1,6 +1,6 @@
 # _Tap Room -- Two Week - React Independent Project One_
 
- The first independent project for the React course for the coding school, Epicodus, written on September 6th, 2019.
+ The first independent project for the React course for the coding school, Epicodus, written on September 6th, 2019. Updated for week two on September 13th, demonstrating understanding of lifting state.
 
 #### By _**Daniel Hongel**_
 
