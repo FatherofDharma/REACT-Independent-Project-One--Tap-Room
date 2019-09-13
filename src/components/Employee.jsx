@@ -6,7 +6,8 @@ import TapDetail from './TapDetail';
 function Employee(props){
   let optionalSelectedTapContent = null;
   if (props.selectedTap != null) {
-    optionalSelectedTapContent = <TapDetail selectedTap={props.selectedTap}/>;
+    console.log(optionalSelectedTapContent)
+    optionalSelectedTapContent = <TapDetail selectedTap={props.tapList[props.selectedTap]}/>;
   }
   return (
     <div>
@@ -21,10 +22,10 @@ function Employee(props){
 }
 
 Employee.propTypes = {
-  tapList: PropTypes.array,
+  tapList: PropTypes.object,
   currentRouterPath: PropTypes.string.isRequired,
   onTapSelection: PropTypes.func.isRequired,
-  selectedTap: PropTypes.object
+  selectedTap: PropTypes.string
 };
 
 export default Employee;

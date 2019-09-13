@@ -5,31 +5,36 @@ import { Switch, Route } from 'react-router-dom';
 import NewTapForm from './NewTapForm';
 import Error404 from './Error404';
 import Employee from './Employee';
+import { v4 } from 'uuid';
 
 class App extends React.Component {
   
   constructor(props) {
     super(props);
     this.state = {
-      masterTapList: [],
+      masterTapList: {},
       selectedTap: null
     };
     this.handleAddingNewTapToList = this.handleAddingNewTapToList.bind(this);
     this.handleChangingSelectedTap = this.handleChangingSelectedTap.bind(this);
   }
   
-  handleChangingSelectedTap(tap){
-    this.setState({selectedTap: tap});
-    alert('The currently selected tap is: ' + this.state.selectedTap.name);
+  handleChangingSelectedTap(tapId){
+    console.log(tapId)
+    this.setState({selectedTap: tapId});
   }
   
   handleAddingNewTapToList(newTap){
-    let newMasterTapList = this.state.masterTapList.slice();
-    newMasterTapList.push(newTap);
+    let newTapId = v4();
+    let newMasterTapList = Object.assign({}, this.state.masterTapList, {
+      [newTapId]: newTap
+    });
     this.setState({masterTapList: newMasterTapList});
   }
   
   render() {
+    console.log(this.state.masterTapList);
+    console.log(this.state.selectedTap);
     var mainStyle = {
     // will add more styles here after learning a bit more about how the entire document is rendered.
     // backgroundColor: 'grey'

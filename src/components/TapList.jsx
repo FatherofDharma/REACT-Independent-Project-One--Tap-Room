@@ -5,22 +5,22 @@ import PropTypes from 'prop-types';
 function TapList(props){
   return (
     <div>
-      {props.tapList.map((tap, index) =>
-        <Tap name={tap.name}
+      {Object.keys(props.tapList).map(function(tapId) {
+        let tap = props.tapList[tapId];
+        return <Tap name={tap.name}
           brewer={tap.brewer}
           price={tap.price}
           abv={tap.abv}
-          flavors={tap.flavors} 
-          currentRouterPath={props.currentRouterPath}
-          key={index}
-          onTapSelection={props.onTapSelection}/>
-      )}
+          flavors={tap.flavors}
+          key={tapId}
+          tapId={tapId}/>;
+      })}
     </div>
   );
 }
 
 TapList.propTypes = {
-  tapList: PropTypes.array,
+  tapList: PropTypes.object,
   currentRouterPath: PropTypes.string,
   onTapSelection: PropTypes.func
 };
