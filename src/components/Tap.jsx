@@ -36,10 +36,10 @@ function Tap(props){
 }
 
 Tap.propTypes = {
-  name: PropTypes.string.required,
-  brewer: PropTypes.string.required,
-  price: PropTypes.number.required,
-  abv: PropTypes.number.required,
+  name: PropTypes.string.isRequired,
+  brewer: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  abv: PropTypes.string.isRequired,
   flavors: PropTypes.string,
   currentRouterPath: PropTypes.string,
   onTapSelection: PropTypes.func,
