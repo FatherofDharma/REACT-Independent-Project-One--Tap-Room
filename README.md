@@ -23,7 +23,7 @@ This application is an two-week independent project from a React coding class at
 
 ![alt text](TapRoom-React.png)
 
-* Changes from Previous Version:
+Changes from Previous Image Version:
 
 * 9-13-19: Tap Control and confirmation questions removed due to being unnecessary 
 
