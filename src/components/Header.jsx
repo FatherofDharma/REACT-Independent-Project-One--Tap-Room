@@ -9,7 +9,7 @@ function Header(){
     paddingLeft: '5',
     margin: '1'
   };
-  // this may not be the most efficient way to target these links, as I could use a global tag in a style jsx tag, but this is to demonstrate objects for this current submission.
+
   var headerLinkStyle = {
     color: 'orange'
   };

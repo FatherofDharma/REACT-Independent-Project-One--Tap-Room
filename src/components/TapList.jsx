@@ -12,7 +12,8 @@ function TapList(props){
           abv={tap.abv}
           flavors={tap.flavors} 
           currentRouterPath={props.currentRouterPath}
-          key={index}/>
+          key={index}
+          onTapSelection={props.onTapSelection}/>
       )}
     </div>
   );
@@ -20,7 +21,8 @@ function TapList(props){
 
 TapList.propTypes = {
   tapList: PropTypes.array,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
+  onTapSelection: PropTypes.func
 };
 
 export default TapList;

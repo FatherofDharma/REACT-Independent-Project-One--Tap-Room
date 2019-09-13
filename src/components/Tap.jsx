@@ -22,7 +22,7 @@ function Tap(props){
   </div>;
   if (props.currentRouterPath === '/employee') {
     return (
-      <div onClick={() => {alert('Test info for clicked ticket' + props.name);}}>
+      <div onClick={() => {props.onTapSelection({name: props.name, brewer: props.brewer, price: props.price, abv: props.abv, flavors: props.flavors});}}>
         {tapInformation}
       </div>
     );
@@ -41,7 +41,8 @@ Tap.propTypes = {
   price: PropTypes.number.required,
   abv: PropTypes.number.required,
   flavors: PropTypes.string,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
+  onTapSelection: PropTypes.func
 };
 
 export default Tap;
