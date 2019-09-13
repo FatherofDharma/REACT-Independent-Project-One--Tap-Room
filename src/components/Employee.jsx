@@ -6,7 +6,7 @@ import TapDetail from './TapDetail';
 function Employee(props){
   let optionalSelectedTapContent = null;
   if (props.selectedTap != null) {
-    console.log(optionalSelectedTapContent)
+    console.log('in Employee if condition' + optionalSelectedTapContent);
     optionalSelectedTapContent = <TapDetail selectedTap={props.tapList[props.selectedTap]}/>;
   }
   return (

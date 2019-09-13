@@ -20,7 +20,7 @@ class App extends React.Component {
   }
   
   handleChangingSelectedTap(tapId){
-    console.log(tapId)
+    console.log('I have been clicked-changingSelectedTap in app')
     this.setState({selectedTap: tapId});
   }
   
@@ -33,8 +33,6 @@ class App extends React.Component {
   }
   
   render() {
-    console.log(this.state.masterTapList);
-    console.log(this.state.selectedTap);
     var mainStyle = {
     // will add more styles here after learning a bit more about how the entire document is rendered.
     // backgroundColor: 'grey'
