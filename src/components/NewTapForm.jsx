@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function NewTapForm(){
+function NewTapForm(props){
   let _name = null;
   let _brewer = null;
   let _price = null;
@@ -9,11 +10,7 @@ function NewTapForm(){
   
   function handleNewTapFormSubmission(event) {
     event.preventDefault();
-    console.log(_name.value);
-    console.log(_brewer.value);
-    console.log(_price.value);
-    console.log(_abv.value);
-    console.log(_flavors.value);
+    props.onNewTapCreation({name: _name.value, brewer: _brewer.value, price: _price.value, abv: _abv.value, flavors: _flavors.value});
     _name.value = '';
     _brewer.value = '';
     _price.value
@@ -52,5 +49,9 @@ function NewTapForm(){
     </div>
   );
 }
+
+NewTapForm.propTypes ={
+  onNewTapCreation: PropTypes.func
+};
 
 export default NewTapForm;
