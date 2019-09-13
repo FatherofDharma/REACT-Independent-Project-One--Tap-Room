@@ -11,6 +11,7 @@ function TapList(props){
           price={tap.price}
           abv={tap.abv}
           flavors={tap.flavors} 
+          currentRouterPath={props.currentRouterPath}
           key={index}/>
       )}
     </div>
@@ -18,7 +19,8 @@ function TapList(props){
 }
 
 TapList.propTypes = {
-  tapList: PropTypes.array
+  tapList: PropTypes.array,
+  currentRouterPath: PropTypes.string
 };
 
 export default TapList;
